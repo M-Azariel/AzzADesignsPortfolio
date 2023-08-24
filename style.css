@@ -1,0 +1,2530 @@
+*{
+    font-family: 'Dosis', sans-serif;
+}
+
+html{
+    width: 100%;
+}
+body{
+    background: rgb(0, 0, 0);
+    background: linear-gradient(357deg, rgb(2, 38, 170) 0%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.header-principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;;
+}
+
+/*___________menu________________*/
+
+.panel{
+    justify-content: space-between;
+    display: flex;
+    margin-right: 50px;
+}
+
+.menu-principal{
+    display: flex;
+    
+}
+
+.linkNombre{
+    width: auto;
+    margin: 0 0 0 30px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.linkNombre:hover{
+    transition: 0.5s;
+    color: rgb(214, 173, 12);
+}
+
+
+.linkMenu{
+    width: auto;
+    margin: 0 0 0 30px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 25px;
+}
+
+
+
+
+.linkMenu:hover{
+    color: rgb(239, 194, 16);
+    transition: .5s;
+    font-size: 30px;
+}
+
+
+.boton-responsivo{/*hace de header*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    display: none;
+}
+
+
+
+.abrir-menu,
+.cerrar-menu{
+    display: none;
+    margin-left: 0;
+}
+
+.cerrar-menu{
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    background-color: rgb(191, 175, 0);
+    width: 100%;
+    display: block;   
+    margin-left: 71px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 10px 90px 10px rgba(94, 91, 0, 0.855) ;
+    margin-top: 50px;
+}
+
+.cerrar-menu:hover{
+    background-color: rgb(116, 106, 0);
+    box-shadow: none;
+    transform: translate(0,-100%);
+    transition: 1s;
+}
+
+.hamburger-inner{
+    margin-left: -26.6px;
+    margin-top: 0px !important;
+}
+
+
+
+.linkMenu-mobile{
+    
+    color: #ffffff;
+    padding: 2rem;
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    width: 100%;
+    border: 2px solid transparent;
+    
+}
+
+.linkMenu-mobile:hover{
+    font-weight: bold ;
+    background: rgb(0,88,180);
+    background: radial-gradient(circle, rgba(62, 77, 240, 0.493) 0%, rgba(22, 104, 136, 0.459) 100%);
+    border-radius: 20px;
+    box-shadow: 5px 5px 50px 15px rgba(0, 48, 208, 0.787);
+    border-color: #0003ca48;
+}
+
+.boton-menu{
+    max-width: 4rem;
+}
+
+.nav-list{
+    list-style-type:none;
+    display: flex;
+    gap: 1rem;
+    top:0;
+}
+
+
+
+.menu .linkMenu-mobile{
+    display: block;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+/*_____MAIN_______*/
+
+.cuerpoPrincipal{
+    margin-top: 20px;
+    background-image: linear-gradient(rgba(5,7,12,0.5), rgba(5,7,12,0.5)),url(imaganes/section\ 1.jpg);
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+    background-repeat: no-repeat;
+    color: aliceblue;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+/*___________todo esto tiene que ver con la presentacion________*/
+
+/*___cara___*/
+.cara-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    border-radius: 50%;
+    transition: transform 0.8s ease
+}
+
+.cara-container:hover{
+    opacity: 1;
+    transition: .8s;
+    transform: scale(1.1)
+}
+
+
+.cara{
+    border-radius: 50%;
+    box-shadow: 10px 10px 40px rgb(0, 2, 17);
+    height: 300px;
+    width: 300px;
+}
+/*_________*/
+
+
+/*_______presentacion_____________*/
+.cuerpoPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.redes-sociales{
+    position: relative;
+    margin-top: 40px;
+    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.linkedin,
+.instagram,
+.github{
+    display: flex;
+    text-align: center;
+    font-size: 50px;
+    transition: .5s;
+    margin: 0 50px;
+
+}
+
+.linkedin,
+.github{
+    margin-top: -170px;
+}
+
+.instagram{
+    margin-top: -70px;
+}
+
+.redes-sociales:hover{
+    font-size: 70px;
+}
+
+.linkedin:hover{
+    color: #0077B5;
+    font-size: 70px;
+}
+
+.instagram:hover{
+    background: linear-gradient(45deg, #E1306C, #C13584, #833AB4, #5851DB, #405DE6, #833AB4, #C13584, #E1306C);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 70px;
+}
+
+.github:hover{
+    color:  #6A737D;
+    font-size: 70px;
+}
+.acerca-de-mi{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 25px;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    margin-top: 50px;
+
+}
+
+.saludo{
+    margin-top: 50px;
+}
+
+.texto-saludo{
+    display: block;
+    text-align: center;
+}
+
+.titulo-saludo{
+    margin-top: 100px;
+    position: relative;
+    font-size: 65px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.profesion{
+    display: flex;
+    position: relative;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*________________________________*/
+
+/*____mis habilidades_________*/
+
+.mis-conocimientos{
+    display: flex;
+    margin-top: 20vh;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 500px;
+    width: 100%;
+}
+
+.coding{
+    font-size: 130px;
+    background: linear-gradient(45deg, #c39517, #fffb0b, #300ef2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 70px;
+}
+
+.titulo-habilidades{
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.tecnologias{
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+}
+
+.prueba{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 0;
+}
+
+.seccion-html,
+.seccion-css,
+.seccion-js,
+.seccion-mysql,
+.seccion-python{
+    margin: 0 80px;
+    width: 5vw;
+    border-radius: 10%;
+}
+
+.img-html,
+.img-css,
+.img-js,
+.img-mysql,
+.img-python{
+    font-size: 80px;
+    transition:  0.3s;
+}
+
+.img-html{
+    margin-left: 0;
+}
+
+.titulo-html,
+.titulo-css,
+.titulo-js,
+.titulo-mysql,
+.titulo-python{
+    transition: font-size 0.3s;
+}
+
+.seccion-html:hover .img-html,
+.seccion-css:hover .img-css,
+.seccion-js:hover .img-js,
+.seccion-mysql:hover .img-mysql,
+.seccion-python:hover .img-python{
+    transform: scale(1.5);
+}
+
+.seccion-html:hover .titulo-html,
+.seccion-css:hover .titulo-css,
+.seccion-js:hover .titulo-js,
+.seccion-mysql:hover .titulo-mysql,
+.seccion-python:hover .titulo-python{
+    margin-top: 18px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.seccion-html:hover .img-html{
+    color: #E34C26;
+}
+
+.seccion-css:hover .img-css{
+    color: #1E90FF;
+}
+
+.seccion-js:hover .img-js{
+    color: #DAA520;
+}
+
+.seccion-mysql:hover .img-mysql{
+    color:#00758F
+}
+
+.seccion-python:hover .img-python{
+    background: linear-gradient(45deg, #306998 50%, #FFD43B 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.seccion-html h3{
+
+    transition: 1s;
+}
+
+.seccion-css h3{
+    margin-left: -10px;
+    transition: 1s;
+}
+
+.seccion-js h3{
+
+    transition: 1s;
+}
+
+.seccion-mysql h3{
+
+    transition: 1s;
+}
+
+.seccion-python h3{
+
+    transition: 1s;
+}
+
+
+
+
+
+.seccion-html:hover .titulo-html{
+    margin-left: -10px;
+    transition: 1s;
+}
+.seccion-css:hover .titulo-css{
+    margin-left: -1px;
+    transition: 1s;
+}
+.seccion-js:hover .titulo-js{
+    margin-left: -11px;
+}
+.seccion-mysql:hover .titulo-mysql{
+    margin-left: 5px;
+    transition: 1s;
+}
+.seccion-python:hover .titulo-python{
+    margin-left: -2px;
+    transition: 1s;
+}
+
+
+
+/*_________________________________________________*/
+
+/*__________mis titulos______________*/
+
+.mis-conocimientos{
+    display: flex;
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+.mi-formacion{
+    margin-top: 200px;
+    display: block;
+    align-content: center;
+
+}
+
+.icono-formacion{
+    font-size: 80px;
+    color: #000000;
+}
+
+.titulo-formaciones{
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+.formaciones{ 
+    display: flex ;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-left: 0;
+    align-content: center;
+}
+
+
+.contenedor-de-formaciones{
+    display: flex ;
+    align-content: center;
+    align-items: center;
+    margin-left: 0;
+}
+/*_________________________________________________________________________________________________*/
+.formaciones .contenedor-formacion{
+    background-color: transparent;
+    width: 400px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 0 73px;
+    width: 400px;
+    height: 300px;
+
+}
+
+.udemy{
+    
+    background-repeat: no-repeat;
+}
+
+.oracle{
+    
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.formaciones .contenedor-formacion .caras-formacion{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.4s ease-in-out;
+    transform-style: preserve-3d;
+
+}
+
+.cara-frente{
+    border-radius: 20%;
+}
+
+.formaciones .contenedor-formacion:hover .caras-formacion{
+    transform: rotateY(180deg); /*para que las cartas roten*/
+}
+
+.formaciones .contenedor-formacion .cara-frente,
+.formaciones .contenedor-formacion .cara-detras{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility:hidden ;/*permite poder boltear el elemento y decidir si queremos que se muestre la parte tracera del elemento*/
+}
+
+.formaciones .contenedor-formacion .cara-frente{
+    background-color: #bbb;
+    color: black;
+}
+
+.formaciones .contenedor-formacion .cara-frente img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+}
+
+.formaciones .contenedor-formacion .cara-detras img{
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    
+}
+
+.formaciones .contenedor-formacion .cara-detras{
+    color: white;
+    transform: rotateY(500deg);
+}
+
+.titulo-formacion{
+    margin-top: 20px;
+    font-size: 50px;
+    position: absolute;
+    top: 68%; /* Centramos verticalmente */
+    left: 50%; /* Centramos horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustamos la posición para centrar */
+    margin: 0; /* Eliminamos cualquier margen que pueda tener por defecto */
+    padding: 10px; /* Opcional: añade un poco de espacio alrededor del título */
+    color: #ffffff;
+    font-weight: bold;
+    border-color: #300ef2;
+    text-shadow: -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, 1px 1px 2px #000; /* Establecemos el borde de las letras */
+
+}
+
+.nombre-institucion{
+    position: absolute;
+    top: 95.7%; /* Centramos verticalmente */
+    left: 50%; /* Centramos horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustamos la posición para centrar */
+    margin: 0; /* Eliminamos cualquier margen que pueda tener por defecto */
+    padding: 10px; /* Opcional: añade un poco de espacio alrededor del título */
+    font-weight: bold;
+    color: #ffffff;
+    border-color: #300ef2; 
+}
+
+/*_______________________________________________________________*/
+
+
+/*_________________mis proyectos_________________*/ 
+
+.mis-proyectos{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 250px;
+    text-align: center;
+
+}
+
+.titulo-proyectos{
+    font-size: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.contenedor-proyectos{
+    display: flex;
+    flex-direction: row;
+    margin: 12px -100px 0px -90px;
+    align-items: center;
+    
+}
+
+.proyecto{
+    display: flex;
+    align-content: center;
+    width: 100%;
+    padding: auto;
+    margin-right: -90px;
+    margin-left: -90px;
+}
+
+.img-proyecto{
+    width: 300px; /* Ajusta el ancho deseado */
+    height: 270px; /* Ajusta la altura deseada */
+    border-radius: 100%;
+    transition: border-radius 1s, width 1s, z-index 0.5s;
+    box-shadow: 3px 2px 40px 4px rgb(0, 2, 17);
+}
+
+.proyecto1:hover,
+.proyecto2:hover,
+.proyecto3:hover,
+.proyecto4:hover,
+.proyecto5:hover{
+    border-radius: 20%;
+    transition: 1s;
+    z-index: 2;
+    width: 400px; /* Ajusta el ancho deseado */
+    height: 270px; /* Ajusta la altura deseada */
+    margin-right: 210px;
+}
+
+
+/*______FOOTER_________________*/
+
+.ultima-seccion{
+    margin-bottom: 500px;
+    justify-content: center;
+    background-color: #000;
+    height: auto;
+    width: 100%;
+    color: #bbb;
+    padding-top: 40px;
+}
+.contenedor-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-footer h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.contenedor-footer p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 30px;
+}
+
+.componentes-finales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+
+
+.lista-componentes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.lista-componentes a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.componente{
+    margin-top: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.curriculum{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.lista-componentes a:hover{
+    transition: color .4s ease;
+}
+
+.curriculum:hover{
+    font-size: 30px;
+    transition: .5s !important;
+}
+
+.icono-mail,
+.icono-youtube,
+.icono-hoja{
+    margin-right: 20px;
+    font-size: 35px;
+}
+
+.icono-mail{
+    background: linear-gradient(120deg, #EA4335 0%, #EA4335 33%, #FBBC05 33%, #FBBC05 66%, #34A853 66%, #34A853 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-top: -5px;
+}
+
+.icono-youtube{
+    bottom: 100px;
+    color: #FF0000;
+    margin-top: -6px;
+}
+
+.icono-hoja{
+    color: #808080;
+    margin-top: -6px;
+}
+
+.componente:hover{
+    opacity: .5 ;
+}
+
+.copy{
+    margin-top: -105px;
+    margin-bottom: 250px;
+    font-size: 40px;
+}
+
+/*__________________________________________________________________________________________________________*/
+
+
+@media (min-width:768px) and (max-width:1024px) {
+    
+    .linkMenu{
+        font-size: 19px;
+    }
+
+
+    .contenedor-de-formaciones{
+        display: block ;
+        align-content: center;
+        align-items: center;
+        margin-left: -2px ;
+    }
+    
+    .seccion-html,
+    .seccion-css,
+    .seccion-js,
+    .seccion-mysql,
+    .seccion-python{
+        margin: 0 30px;
+        width: 5vw;
+        border-radius: 10%;
+    }
+
+    .linkNombre{
+        font-size: 20px;
+        margin-left: 44px;
+    }
+
+    .titulo-saludo{
+        font-size: 30px;
+    }
+
+    .profesion{
+        font-size: 25px;
+    }
+
+    /*habilidades_____*/
+
+    .titulo-habilidades{
+        font-size: 30px;
+    }
+
+    .seccion-html h3{
+        margin-left: 10px;
+        transition: 1s;
+    }
+
+    .seccion-css h3{
+        margin-left: 14px;
+        transition: 1s;
+    }
+
+    .seccion-js h3{
+        margin-left: 2px;
+        transition: 1s;
+    }
+
+    .seccion-mysql h3{
+        margin-left: 17px;
+        transition: 1s;
+    }
+
+    .seccion-python h3{
+        margin-left: 14px;
+        transition: 1s;
+    }
+    
+    
+    .seccion-html,
+    .seccion-css,
+    .seccion-js,
+    .seccion-mysql,
+    .seccion-python{
+        margin: 0 35px;
+        width: 5vw;
+        border-radius: 10%;
+        margin-top: 30px;
+    }
+
+
+    .seccion-html:hover .titulo-html{
+        margin-left: -10px;
+        transition: 1s;
+    }
+    .seccion-css:hover .titulo-css{
+        margin-left: -1px;
+        transition: 1s;
+    }
+    .seccion-js:hover .titulo-js{
+        margin-left: -25px;
+    }
+    .seccion-mysql:hover .titulo-mysql{
+        margin-left: 5px;
+    }
+    .seccion-python:hover .titulo-python{
+        margin-left: -2px;
+        transition: 1s;
+    }
+
+
+    /*formacion_______*/
+
+    .titulo-formaciones{
+        font-size: 30px;
+    }
+    .mi-formacion{
+        margin-top: 20vh;
+        margin-bottom: -5vh;
+    }
+
+    .contenedor-formacion{
+        margin-top: 50px;
+    }
+
+    /*footer______*/
+    .copy{
+        font-size: 20px;
+    }
+
+    .icono{
+        font-size: 30px;
+    }
+
+    /*proyectos___*/
+
+    .mis-proyectos{
+        display: block;
+        margin: 0 0 0 0;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+
+    }
+    .titulo-proyectos{
+        margin: 200px 0 30px 5px;
+        font-size: 30px;
+    }
+
+    .contenedor-proyectos{
+        background-image: url(imaganes/cieloEstrellas1.jpg);
+        width: 100%;
+        margin: auto;
+        
+    }
+
+    .proyecto{
+        width: 100%;
+        display: flex;
+        align-content: center;
+        padding: 0 0px;
+        margin-right: -90px;
+        margin-left: -90px;
+    }
+
+    .img-proyecto{
+        
+        width: 100%; /* Ajusta el ancho deseado */
+        height: 70px; /* Ajusta la altura deseada */
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0px -91px 1px 89px;
+        filter: brightness(80%);
+        opacity: 0.4;
+        margin-top: 5px;
+        
+    }
+
+    .proyecto1:hover,
+    .proyecto2:hover,
+    .proyecto3:hover,
+    .proyecto4:hover,
+    .proyecto5:hover{
+    margin: 0px -91px 1px 89px;
+    width: 100%;
+    height: 230px; /* Ajusta la altura deseada */
+    filter: brightness(100%);
+    border-radius: 0;
+    margin-right: none;
+    opacity: 1;
+    }
+
+
+
+    .contenedor-proyectos{
+        display: inline-block;
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+
+}
+/*__________________________________________________________________________________________________________*/
+@media (max-width:420px) {
+
+
+    /*_______________header__________________*/
+    body{
+        width: 100%;
+        height: 100vh;
+    }
+    .header-principal{
+        display: block;
+        width: 100%;
+        max-width:100%;
+    }
+
+    .linkNombre{
+        font-size: 35px;
+    }
+
+    .panel{
+        display: none;
+    }
+
+    /*________________acerca de mi__________________*/
+    .cuerpoPrincipal{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .cara-container{
+        margin-top: 10px;
+    }
+    .cara{
+        border-radius: 50%;
+        box-shadow: 10px 10px 40px rgb(0, 2, 17);
+        height: 200px;
+        width: 200px;
+    }
+
+    .redes-sociales {
+        position: relative;
+        margin-top: 90px;
+        justify-content: space-between;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .acerca-de-mi{
+        display: block;
+        width: 100%;
+        max-width:100%;
+    }
+
+    .linkedin, .instagram, .github {
+        display: flex;
+        text-align: center;
+        font-size: 50px;
+        transition: all 0.5s ease 0s;
+        margin: 0px 28px;
+    }
+
+    .linkedin,
+    .github{
+        margin-top: -170px;
+    }
+
+    .instagram{
+        margin-top: -10px;
+    }
+
+
+    .texto-saludo{
+        display: block;
+        text-align: center;
+    }
+
+    .mis-conocimientos{
+        display: block;
+        width: 100%;
+        max-width:100%;
+    }
+    .tecnologias{
+        display: block;
+        width: 100%;
+        max-width:100%;
+        align-content: center;
+    }
+    .prueba{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        margin-left: -55px;
+    }
+
+    .img-html{
+        margin-left: 0;
+    }
+    
+
+    .mi-formacion{
+        display: block;
+        width: 100%;
+        max-width:100%;
+    }
+
+    .formaciones{
+        display:inline-block;
+        width: 100%;
+        max-width:100%;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+    }
+
+    .contenedor-de-formaciones{
+        display: block ;
+        align-content: center;
+        align-items: center;
+        margin-left: 20px ;
+    }
+
+    .contenedor-formacion{
+        display: block;
+        width: 100%;
+        max-width:100%;
+        align-items: center;
+    }
+
+    .udemy{
+        max-width: 250px;
+        max-height: 150px;
+        display: flex;
+        align-items: center;
+        margin-left: -10px;
+    }
+
+    .oracle{
+        max-width: 250px;
+        max-height: 150px;
+        display: flex;
+        align-items: center;
+        margin-left: -10px;
+    }
+
+    .caras-formacion{
+        max-width: 250px;
+        max-height: 150px;
+        display: flex;
+        align-items: center;
+        margin-left: -10px;
+    }
+
+    .cara-frente{
+        max-width: 250px;
+        max-height: 150px;
+        display: flex;
+        align-items: center;
+        margin-left: -10px;
+    }
+
+    .imagen-formacion{
+        max-width: 250px;
+        max-height: 150px;
+    }
+
+    /*_______________mis proyectos__________________________*/
+
+    .mis-proyectos{
+        display: block;
+        margin: 0 0 0 0;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+
+    }
+    .titulo-proyectos{
+        margin: 200px 0 30px 5px;
+        
+    }
+
+    .contenedor-proyectos{
+        background-image: url(imaganes/cieloEstrellas1.jpg);
+        width: 100%;
+        margin: auto;
+        
+    }
+
+    .proyecto{
+        width: 100%;
+        display: flex;
+        align-content: center;
+        padding: 0 0px;
+        margin-right: -90px;
+        margin-left: -90px;
+    }
+
+    .img-proyecto{
+        
+        width: 100%; /* Ajusta el ancho deseado */
+        height: 70px; /* Ajusta la altura deseada */
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0px -91px 1px 89px;
+        filter: brightness(80%);
+        opacity: 0.4;
+        margin-top: 5px;
+        
+    }
+
+    .proyecto1:hover,
+    .proyecto2:hover,
+    .proyecto3:hover,
+    .proyecto4:hover,
+    .proyecto5:hover{
+    margin: 0px -91px 1px 89px;
+    width: 100%;
+    height: 230px; /* Ajusta la altura deseada */
+    filter: brightness(100%);
+    border-radius: 0;
+    margin-right: none;
+    opacity: 1;
+    }
+
+
+
+    .contenedor-proyectos{
+        display: inline-block;
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    /*_______________________footer________________________*/
+
+    .ultima-seccion{
+        margin-top: -5px;
+    }
+
+    .componente p{
+        font-size: 20px;
+    }
+
+    .lista-componentes{
+        margin: 0 0;
+    }
+
+    .lista-componentes a{
+        font-size: 20px;
+    }
+
+    .componentes-finales{
+        margin: 0 0;
+
+    }
+
+    .copy{
+        font-size: 1px;
+    }
+}
+/*__________________________________________________________________________________________________________*/
+@media (max-width:280px){
+
+
+
+    .linkNombre{
+        font-size: 20px;
+        margin-left: 44px;
+    }
+
+    .titulo-saludo{
+        font-size: 30px;
+    }
+
+    .profesion{
+        font-size: 25px;
+    }
+
+    /*habilidades_____*/
+
+    .titulo-habilidades{
+        font-size: 30px;
+    }
+
+    .seccion-html h3{
+        margin-left: 10px;
+        transition: 1s;
+    }
+
+    .seccion-css h3{
+        margin-left: 14px;
+        transition: 1s;
+    }
+
+    .seccion-js h3{
+        margin-left: 2px;
+        transition: 1s;
+    }
+
+    .seccion-mysql h3{
+        margin-left: 17px;
+        transition: 1s;
+    }
+
+    .seccion-python h3{
+        margin-left: 14px;
+        transition: 1s;
+    }
+    
+    
+    .seccion-html,
+    .seccion-css,
+    .seccion-js,
+    .seccion-mysql,
+    .seccion-python{
+        margin: 0 35px;
+        width: 5vw;
+        border-radius: 10%;
+        margin-top: 30px;
+    }
+
+
+    .seccion-html:hover .titulo-html{
+        margin-left: -10px;
+        transition: 1s;
+    }
+    .seccion-css:hover .titulo-css{
+        margin-left: -1px;
+        transition: 1s;
+    }
+    .seccion-js:hover .titulo-js{
+        margin-left: -25px;
+    }
+    .seccion-mysql:hover .titulo-mysql{
+        margin-left: 5px;
+    }
+    .seccion-python:hover .titulo-python{
+        margin-left: -2px;
+        transition: 1s;
+    }
+
+
+
+    /*formacion_______*/
+
+    .titulo-formaciones{
+        font-size: 30px;
+    }
+    .mi-formacion{
+        margin-top: 20vh;
+        margin-bottom: -5vh;
+    }
+
+    .contenedor-formacion{
+        margin-top: 50px;
+    }
+
+
+
+
+    /*proyectos_______*/
+    .titulo-proyectos{
+        font-size: 30px;
+    }
+
+
+    /*footer______*/
+    .copy{
+        font-size: 20px;
+    }
+
+    .icono{
+        font-size: 30px;
+    }
+
+
+    .mi-formacion{
+        display: block;
+        width: 100%;
+        max-width:100%;
+    }
+
+    .formaciones{
+        display:inline-block;
+        width: 100%;
+        max-width:100%;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+    }
+
+    .contenedor-de-formaciones {
+        display: block;
+        align-content: center;
+        align-items: center;
+        margin-left: -100px;
+    }
+
+
+    .udemy{
+        max-width: 205px;
+        max-height: 130px;
+        display: flex;
+        align-items: center;
+        margin-left: -10px;
+    }
+
+    .oracle{
+        max-width: 205px;
+        max-height: 130px;
+        display: flex;
+        align-items: center;
+        margin-left: -10px;
+    }
+
+    .caras-formacion{
+        max-width: 250px;
+        max-height: 150px;
+        display: flex;
+        align-items: center;
+        margin-left: -10px;
+    }
+
+    .cara-frente{
+        max-width: 250px;
+        max-height: 150px;
+        display: flex;
+        align-items: center;
+        margin-left: -10px;
+    }
+
+    .imagen-formacion{
+        max-width: 250px;
+        max-height: 150px;
+    }
+
+
+    /*________footer mobile*/
+    a.componente{
+        font-size: 15px;
+    }
+
+    /*menu mobile__________*/
+
+    .linkMenu-mobile:hover{
+        font-weight: bold ;
+        background: rgb(0,88,180);
+        background: radial-gradient(circle, rgba(62, 77, 240, 0.493) 0%, rgba(22, 104, 136, 0.459) 100%);
+        border-radius: 20px;
+        box-shadow: 5px 5px 50px 15px rgba(0, 48, 208, 0.787);
+        border-color: #0003ca48;
+    }
+
+    .boton-responsivo{/*hace de header*/
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        position: fixed;
+        z-index: 999;
+        bottom: 1vh;
+        right: 1vw;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color:rgba(214, 173, 12,.9);
+        margin-right: -2px;
+        bottom: 30px;
+        
+    }
+    .abrir-menu{
+        display: block;   
+        margin-left: -50px;
+
+    }
+
+    
+
+    .nav {/*este es el panel */
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        top: -5vh;
+        right: -2px;
+        bottom: -4px;
+        left: -26.5vh;
+        background: linear-gradient(357deg, rgba(0, 22, 165, 0.93) 0%, rgb(0, 1, 41) 100%);
+        background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+        transform: translate(0,-100%);
+        transition: 2s;
+        z-index: 998;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+        visibility: hidden;
+        margin-top: 10px;
+        bottom: -15px;
+        position: fixed;
+
+    }
+    
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+        transition: 2s;
+        transform: translate(0,0);
+    }
+    
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-left: 17vh;
+        margin-top: 25px;
+        
+        width: inherit;
+        justify-content: space-evenly;
+    }
+
+    .cerrar-menu{
+        margin-top: 45px;
+    }
+
+    /*______________________________________*/
+    .formaciones{
+        display:inline-block;
+        width: 100%;
+        max-width:100%;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+    }
+
+    .contenedor-de-formaciones {
+        display: block;
+        align-content: center;
+        align-items: center;
+        margin-left: -12px;
+    }
+
+
+    .udemy{
+        max-width: 205px;
+        max-height: 130px;
+        display: flex;
+        align-items: center;
+        margin-left: -10px;
+    }
+
+    .oracle{
+        max-width: 205px;
+        max-height: 130px;
+        display: flex;
+        align-items: center;
+        margin-left: -10px;
+    }
+
+    .caras-formacion{
+        max-width: 250px;
+        max-height: 150px;
+        display: flex;
+        align-items: center;
+        margin-left: -10px;
+    }
+
+    .cara-frente{
+        max-width: 250px;
+        max-height: 150px;
+        display: flex;
+        align-items: center;
+        margin-left: -10px;
+    }
+
+    .imagen-formacion{
+        max-width: 250px;
+        max-height: 150px;
+    }
+
+    
+
+
+
+    
+}
+/*__________________________________________________________________________________________________________*/
+@media (width:360px){
+
+
+    .linkNombre{
+        font-size: 20px;
+        margin-left: 86px;
+    }
+
+    .titulo-saludo{
+        font-size: 30px;
+    }
+
+    .profesion{
+        font-size: 20px;
+    }
+
+    /*habilidades_____*/
+
+    .titulo-habilidades{
+        font-size: 30px;
+    }
+
+    .seccion-html h3{
+        margin-left: 10px;
+        transition: 1s;
+    }
+
+    .seccion-css h3{
+        margin-left: 14px;
+        transition: 1s;
+    }
+
+    .seccion-js h3{
+        margin-left: 2px;
+        transition: 1s;
+    }
+
+    .seccion-mysql h3{
+        margin-left: 17px;
+        transition: 1s;
+    }
+
+    .seccion-python h3{
+        margin-left: 14px;
+        transition: 1s;
+    }
+    
+    .img-html{
+        margin-left: 10px;
+    }
+
+    .seccion-html h3{
+        margin-left: 20px;
+    }
+    
+    .seccion-html,
+    .seccion-css,
+    .seccion-js,
+    .seccion-mysql,
+    .seccion-python{
+        margin: 0 30px;
+        width: 5vw;
+        border-radius: 10%;
+    }
+
+    .imagen-icono{
+        margin-top: 15px;
+    }
+
+    .seccion-html:hover .titulo-html{
+        margin-left: 4px;
+        transition: 1s;
+    }
+
+
+    .seccion-css:hover{
+        margin-top: 15px;
+        transition: 1.5s;
+    }
+    .seccion-css:hover .titulo-css{
+        margin-left: -1px;
+        transition: 1s;
+    }
+
+    .seccion-js:hover{
+        margin-top: 15px;
+        transition: 1.5s;
+    }
+    .seccion-js:hover .titulo-js{
+        margin-left: -25px;
+        transition: 1s;
+        margin-bottom: 5px;
+    }
+
+    .seccion-mysql:hover{
+        margin-top: 15px;
+        transition: 1.5s;
+    }
+    .seccion-mysql:hover .titulo-mysql{
+        margin-left: 5px;
+        transition: 1.5s;
+    }
+
+    .seccion-python:hover{
+        margin-top: 15px;
+        transition: 1.5s;
+    }
+    .seccion-python:hover .titulo-python{
+        margin-left: -2px;
+        transition: 1s;
+    }
+
+
+    /*formacion_______*/
+
+    .titulo-formaciones{
+        font-size: 30px;
+    }
+    .mi-formacion{
+        margin-top: 20vh;
+        margin-bottom: -5vh;
+    }
+
+    .contenedor-formacion{
+        margin-top: 50px;
+    }
+
+    /*proyectos_______*/
+    .titulo-proyectos{
+        font-size: 30px;
+    }
+
+
+    /*footer______*/
+    .copy{
+        font-size: 20px;
+    }
+
+    .icono{
+        font-size: 30px;
+    }
+
+
+    .mi-formacion{
+        display: block;
+        width: 100%;
+        max-width:100%;
+    }
+
+    .formaciones{
+        display:inline-block;
+        width: 100%;
+        max-width:100%;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+    }
+
+    .contenedor-de-formaciones {
+        display: block;
+        align-content: center;
+        align-items: center;
+        margin-left: 29px;
+        
+    }
+
+
+    .imagen-formacion .udemy{
+        margin-bottom: -50px;
+    }
+
+
+    .udemy{
+        max-width: 205px;
+        max-height: 130px;
+        display: flex;
+        align-items: center;
+        margin-left: -10px;
+
+    }
+
+    .oracle{
+        max-width: 205px;
+        max-height: 130px;
+        display: flex;
+        align-items: center;
+        margin-left: -10px;
+    }
+
+    .caras-formacion{
+        max-width: 250px;
+        max-height: 150px;
+        display: flex;
+        align-items: center;
+        margin-left: -10px;
+    }
+
+    .cara-frente{
+        max-width: 250px;
+        max-height: 150px;
+        display: flex;
+        align-items: center;
+        margin-left: -10px;
+    }
+
+    .imagen-formacion{
+        max-width: 250px;
+        max-height: 150px;
+    }
+
+
+    /*________footer*/
+    a.componente{
+        font-size: 15px;
+    }
+
+    /*menu mobile__________*/
+
+    .linkMenu-mobile:hover{
+        font-weight: bold ;
+        background: rgb(0,88,180);
+        background: radial-gradient(circle, rgba(62, 77, 240, 0.493) 0%, rgba(22, 104, 136, 0.459) 100%);
+        border-radius: 20px;
+        box-shadow: 5px 5px 50px 15px rgba(0, 48, 208, 0.787);
+        border-color: #0003ca48;
+    }
+
+    .boton-responsivo{/*hace de header*/
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        position: fixed;
+        z-index: 999;
+        bottom: 1vh;
+        right: 1vw;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color:rgba(214, 173, 12,.9);
+        margin-right: -2px;
+        bottom: 30px;
+        
+    }
+    .abrir-menu{
+        display: block;   
+        margin-left: -50px;
+
+    }
+
+    
+
+    .nav {/*este es el panel */
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        top: -5vh;
+        right: -2px;
+        bottom: -4px;
+        left: -26.5vh;
+        background: linear-gradient(357deg, rgba(0, 22, 165, 0.93) 0%, rgb(0, 1, 41) 100%);
+        background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+        transform: translate(0,-100%);
+        transition: 2s;
+        z-index: 998;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+        visibility: hidden;
+        margin-top: 10px;
+        bottom: -15px;
+        position: fixed;
+
+    }
+    
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+        transition: 2s;
+        transform: translate(0,0);
+    }
+    
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-left: 15vh;
+        margin-top: 25px;
+        
+        width: inherit;
+        justify-content: space-evenly;
+    }
+
+    .cerrar-menu{
+        margin-top: 45px;
+    }
+}
+/*__________________________________________________________________________________________________________*/
+@media (min-width:375px) and (max-width:393px){
+
+    .titulo-saludo{
+        font-size: 30px;
+    }
+
+    .profesion{
+        font-size: 20px;
+    }
+
+    /*habilidades_____*/
+
+    .titulo-habilidades{
+        font-size: 30px;
+    }
+
+    .titulo-habilidades{
+        font-size: 30px;
+    }
+
+    .seccion-html h3{
+        margin-left: 10px;
+        transition: 1s;
+    }
+
+    .seccion-css h3{
+        margin-left: 14px;
+        transition: 1s;
+    }
+
+    .seccion-js h3{
+        margin-left: 2px;
+        transition: 1s;
+    }
+
+    .seccion-mysql h3{
+        margin-left: 17px;
+        transition: 1s;
+    }
+
+    .seccion-python h3{
+        margin-left: 14px;
+        transition: 1s;
+    }
+    
+    .img-html{
+        margin-left: 10px;
+    }
+
+    .seccion-html h3{
+        margin-left: 20px;
+    }
+    
+    .seccion-html,
+    .seccion-css,
+    .seccion-js,
+    .seccion-mysql,
+    .seccion-python{
+        margin: 0 30px;
+        width: 5vw;
+        border-radius: 10%;
+    }
+
+    .imagen-icono{
+        margin-top: 15px;
+    }
+
+    .seccion-html:hover .titulo-html{
+        margin-left: 4px;
+        transition: 1s;
+    }
+
+
+    .seccion-css:hover{
+        margin-top: 15px;
+        transition: 1.5s;
+    }
+    .seccion-css:hover .titulo-css{
+        margin-left: -1px;
+        transition: 1s;
+    }
+
+    .seccion-js:hover{
+        margin-top: 15px;
+        transition: 1.5s;
+    }
+    .seccion-js:hover .titulo-js{
+        margin-left: -25px;
+        transition: 1s;
+        margin-bottom: 5px;
+    }
+
+    .seccion-mysql:hover{
+        margin-top: 15px;
+        transition: 1.5s;
+    }
+    .seccion-mysql:hover .titulo-mysql{
+        margin-left: 5px;
+        transition: 1.5s;
+    }
+
+    .seccion-python:hover{
+        margin-top: 15px;
+        transition: 1.5s;
+    }
+    .seccion-python:hover .titulo-python{
+        margin-left: -2px;
+        transition: 1s;
+    }
+
+
+
+    /*formacion_______*/
+
+    .titulo-formaciones{
+        font-size: 30px;
+    }
+    .mi-formacion{
+        margin-top: 20vh;
+        margin-bottom: -5vh;
+    }
+
+    .contenedor-formacion{
+        margin-top: 50px;
+    }
+
+    /*proyectos_______*/
+    .titulo-proyectos{
+        font-size: 30px;
+    }
+
+
+    /*footer______*/
+    .copy{
+        font-size: 20px;
+    }
+
+    /*menu responsivo_______________*/
+
+    .boton-responsivo{/*hace de header*/
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        position: fixed;
+        z-index: 999;
+        bottom: 1vh;
+        right: 1vw;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color:rgba(214, 173, 12,.9);
+    }
+
+
+    .abrir-menu{
+        display: block;   
+        margin-left: -50px;
+
+    }
+
+    .nav {/*este es el panel */
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        top: -90vh;
+        right: -3px;
+        bottom: -10px;
+        left: -50vh;
+        background: linear-gradient(357deg, rgba(0, 22, 165, 0.93) 0%, rgb(0, 1, 41) 100%);
+        background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+        transform: translate(0,-100%);
+        transition: 2s;
+        z-index: 998;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+        visibility: hidden;
+    }
+    
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+        transition: 2s;
+        transform: translate(0,0);
+    }
+    
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-left: 50px;
+        top: 0;
+        width: inherit;
+        justify-content: space-evenly;
+    }
+    
+}
+/*__________________________________________________________________________________________________________*/
+@media (min-width: 361px) and (max-width: 375px) {
+
+    .boton-responsivo{/*hace de header*/
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        position: fixed;
+        z-index: 999;
+        bottom: 1vh;
+        right: 1vw;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color:rgba(214, 173, 12,.9);
+    }
+
+
+    .abrir-menu{
+        display: block;   
+        margin-left: -50px;
+
+    }
+
+    
+
+    .nav {/*este es el panel */
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        top: -87vh;
+        right: -3px;
+        bottom: -10px;
+        left: -62vh;
+
+        background: linear-gradient(357deg, rgba(0, 22, 165, 0.93) 0%, rgb(0, 1, 41) 100%);
+        background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+        transform: translate(0,-100%);
+        transition: 2s;
+        z-index: 998;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+        visibility: hidden;
+
+    }
+    
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+        transition: 2s;
+        transform: translate(0,0);
+    }
+    
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-left: 50px;
+        top: 0;
+        width: inherit;
+        justify-content: space-evenly;
+    }
+    
+}
+/*__________________________________________________________________________________________________________*/
+@media (width:540px) {
+
+    html{
+        width: 540px;
+    }
+
+
+    .header-principal{
+        display: block;
+        margin-left: 22px;
+    }
+
+    .linkMenu{
+        font-size: 16px;
+        
+    }
+
+    .contenedor-de-formaciones{
+        display: block ;
+        align-content: center;
+        align-items: center;
+        margin-left: -2px ;
+    }
+
+
+    .tecnologias{
+        margin-right: 30px;
+    }
+    
+    .seccion-html h3{
+        margin-left: 10px;
+        transition: 1s;
+    }
+
+    .seccion-css h3{
+        margin-left: 14px;
+        transition: 1s;
+    }
+
+    .seccion-js h3{
+        margin-left: 2px;
+        transition: 1s;
+    }
+
+    .seccion-mysql h3{
+        margin-left: 17px;
+        transition: 1s;
+    }
+
+    .seccion-python h3{
+        margin-left: 14px;
+        transition: 1s;
+    }
+    
+    
+    .seccion-html,
+    .seccion-css,
+    .seccion-js,
+    .seccion-mysql,
+    .seccion-python{
+        margin: 0 35px;
+        width: 5vw;
+        border-radius: 10%;
+    }
+
+
+    .seccion-html:hover .titulo-html{
+        margin-left: -10px;
+        transition: 1s;
+    }
+    .seccion-css:hover .titulo-css{
+        margin-left: -1px;
+        transition: 1s;
+    }
+    .seccion-js:hover .titulo-js{
+        margin-left: -25px;
+    }
+    .seccion-mysql:hover .titulo-mysql{
+        margin-left: 5px;
+    }
+    .seccion-python:hover .titulo-python{
+        margin-left: -2px;
+        transition: 1s;
+    }
+
+    .linkNombre{
+        display: none;
+    }
+
+    .titulo-saludo{
+        font-size: 30px;
+    }
+
+    .profesion{
+        font-size: 25px;
+    }
+
+    /*habilidades_____*/
+
+    .titulo-habilidades{
+        font-size: 30px;
+    }
+
+    /*formacion_______*/
+
+    .titulo-formaciones{
+        font-size: 30px;
+    }
+    .mi-formacion{
+        margin-top: 20vh;
+        margin-bottom: -5vh;
+    }
+
+    .contenedor-formacion{
+        margin-top: 50px;
+    }
+
+    /*proyectos_______*/
+    .titulo-proyectos{
+        font-size: 30px;
+    }
+
+
+    /*footer______*/
+    .copy{
+        font-size: 20px;
+    }
+
+    .icono{
+        font-size: 30px;
+    }
+
+    /*____________________*/
+
+    .mis-proyectos{
+        display: block;
+        margin: 0 0 0 0;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+
+    }
+    .titulo-proyectos{
+        margin: 200px 0 30px 5px;
+        
+    }
+
+    .contenedor-proyectos{
+        background-image: url(imaganes/cieloEstrellas1.jpg);
+        width: 100%;
+        margin: auto;
+        
+    }
+
+    .proyecto{
+        width: 100%;
+        display: flex;
+        align-content: center;
+        padding: 0 0px;
+        margin-right: -90px;
+        margin-left: -90px;
+    }
+
+    .img-proyecto{
+        
+        width: 100%; /* Ajusta el ancho deseado */
+        height: 70px; /* Ajusta la altura deseada */
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0px -91px 1px 89px;
+        filter: brightness(80%);
+        opacity: 0.4;
+        margin-top: 5px;
+        
+    }
+
+    .proyecto1:hover,
+    .proyecto2:hover,
+    .proyecto3:hover,
+    .proyecto4:hover,
+    .proyecto5:hover{
+    margin: 0px -91px 1px 89px;
+    width: 100%;
+    height: 230px; /* Ajusta la altura deseada */
+    filter: brightness(100%);
+    border-radius: 0;
+    margin-right: none;
+    opacity: 1;
+    }
+
+
+
+    .contenedor-proyectos{
+        display: inline-block;
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+}
+/*__________________________________________________________________________________________________________*/
+@media (min-width:412px) and (max-width:520px) {
+    .boton-responsivo{/*hace de header*/
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        position: fixed;
+        z-index: 999;
+        bottom: 1vh;
+        right: 1vw;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color:rgba(214, 173, 12,.9);
+    }
+
+    .abrir-menu{
+        display: block;   
+        margin-left: -50px;
+    }
+
+    .nav {/*este es el panel */
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        top: -91vh;
+        right: -3px;
+        bottom: -10px;
+        left: -50vh;
+        padding-top: 50px;
+        background: linear-gradient(357deg, rgba(0, 22, 165, 0.93) 0%, rgb(0, 1, 41) 100%);
+        background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+        transform: translate(0,-100%);
+        transition: 2s;
+        z-index: 998;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+        visibility: hidden;
+    }
+    
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+        transition: 2s;
+        transform: translate(0,0);
+    }
+    
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-left: 50px;
+        top: 0;
+        width: inherit;
+        justify-content: space-evenly;
+    }
+    
+
+    /*________header___________*/
+
+    .linkNombre{
+        font-size: 40px;
+    }
+
+    /*_________________saludo__________*/
+
+    .titulo-saludo{
+        font-size: 35px;
+    }
+
+    .profesion{
+        font-size: 25px;
+    }
+
+    /*________habilidades_____________*/
+
+    .titulo-habilidades{
+        font-size: 35px;
+    }
+
+    .seccion-html h3{
+        margin-left: 10px;
+        transition: 1s;
+    }
+
+    .seccion-css h3{
+        margin-left: 14px;
+        transition: 1s;
+    }
+
+    .seccion-js h3{
+        margin-left: 2px;
+        transition: 1s;
+    }
+
+    .seccion-mysql h3{
+        margin-left: 17px;
+        transition: 1s;
+    }
+
+    .seccion-python h3{
+        margin-left: 14px;
+        transition: 1s;
+    }
+    
+    .img-html{
+        margin-left: 10px;
+    }
+
+    .seccion-html h3{
+        margin-left: 20px;
+    }
+    
+    .seccion-html,
+    .seccion-css,
+    .seccion-js,
+    .seccion-mysql,
+    .seccion-python{
+        margin: 0 30px;
+        width: 5vw;
+        border-radius: 10%;
+    }
+
+    .imagen-icono{
+        margin-top: 15px;
+    }
+
+    .seccion-html:hover .titulo-html{
+        margin-left: 4px;
+        transition: 1s;
+    }
+
+
+    .seccion-css:hover{
+        margin-top: 15px;
+        transition: 1.5s;
+    }
+    .seccion-css:hover .titulo-css{
+        margin-left: -1px;
+        transition: 1s;
+    }
+
+    .seccion-js:hover{
+        margin-top: 15px;
+        transition: 1.5s;
+    }
+    .seccion-js:hover .titulo-js{
+        margin-left: -25px;
+        transition: 1s;
+        margin-bottom: 5px;
+    }
+
+    .seccion-mysql:hover{
+        margin-top: 15px;
+        transition: 1.5s;
+    }
+    .seccion-mysql:hover .titulo-mysql{
+        margin-left: 5px;
+        transition: 1.5s;
+    }
+
+    .seccion-python:hover{
+        margin-top: 15px;
+        transition: 1.5s;
+    }
+    .seccion-python:hover .titulo-python{
+        margin-left: -2px;
+        transition: 1s;
+    }
+
+
+    /*___________formacion_________*/
+    .titulo-formaciones{
+        font-size: 35px;
+    }
+
+    /*___________proyectos_______*/
+    .titulo-proyectos{
+        font-size: 35px;
+    }
+}
